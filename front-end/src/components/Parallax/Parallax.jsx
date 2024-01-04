@@ -55,6 +55,9 @@ export default function Demo() {
   const back4 = useParallax({
     speed: -30,
   });
+  const rocket = useParallax({
+    speed: -30,
+  });
   return (
     <>
       <div className="container-body">
@@ -63,11 +66,11 @@ export default function Demo() {
           to="image-flex-link"
           spy={true}
           smooth={true}
-          offset={10}
-          duration={10}
+          offset={1350}
+          duration={5000}
           className="link"
         >
-          Click Here to go bottom
+          Click Here
           <h3 className="h3">></h3>
           <h3 className="h4">></h3>
           <h3 className="h5">></h3>
@@ -76,18 +79,16 @@ export default function Demo() {
         <h1 ref={parallax01.ref}>NEXT GEN UI</h1>{" "}
         <div className="images-wrapper">
           <div className="cat" ref={cat.ref}>
-            <img src="https://images.pexels.com/photos/1404819/pexels-photo-1404819.jpeg?auto=compress&cs=tinysrgb&w=200" />
+            {/* <img src="https://images.pexels.com/photos/1404819/pexels-photo-1404819.jpeg?auto=compress&cs=tinysrgb&w=200" /> */}
           </div>
           <div className="dog" ref={dog.ref}>
-            <img src="https://images.pexels.com/photos/3361739/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=200" />
+            {/* <img src="https://images.pexels.com/photos/3361739/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=200" /> */}
           </div>
           <div className="rabbit" ref={rabbit.ref}>
-            <img src="https://images.pexels.com/photos/3828097/pexels-photo-3828097.jpeg?auto=compress&cs=tinysrgb&w=200" />
+            {/* <img src="https://images.pexels.com/photos/3828097/pexels-photo-3828097.jpeg?auto=compress&cs=tinysrgb&w=200" /> */}
           </div>
         </div>
-        <div ref={parallax.ref} className="image">
-          click
-        </div>
+        <div ref={parallax.ref} className="image"></div>
         <div ref={parallax1.ref} className="image"></div>.
       </div>
       <div className="images-flex" id="image-flex-link">
@@ -103,6 +104,9 @@ export default function Demo() {
         <div className="back" ref={back1.ref}>
           <img src="./img-back1.png" className="back1" />
         </div>
+      </div>
+      <div className="images-flex1">
+        <img src="./rocket.png" className="rocket" ref={rocket.ref} />
       </div>
     </>
   );
