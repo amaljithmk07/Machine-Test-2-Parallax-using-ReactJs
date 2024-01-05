@@ -79,13 +79,13 @@ export default function Demo() {
         <h1 ref={parallax01.ref}>NEXT GEN UI</h1>{" "}
         <div className="images-wrapper">
           <div className="cat" ref={cat.ref}>
-            {/* <img src="https://images.pexels.com/photos/1404819/pexels-photo-1404819.jpeg?auto=compress&cs=tinysrgb&w=200" /> */}
+            <img src="https://images.pexels.com/photos/1404819/pexels-photo-1404819.jpeg?auto=compress&cs=tinysrgb&w=200" />
           </div>
           <div className="dog" ref={dog.ref}>
-            {/* <img src="https://images.pexels.com/photos/3361739/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=200" /> */}
+            <img src="https://images.pexels.com/photos/3361739/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=200" />
           </div>
           <div className="rabbit" ref={rabbit.ref}>
-            {/* <img src="https://images.pexels.com/photos/3828097/pexels-photo-3828097.jpeg?auto=compress&cs=tinysrgb&w=200" /> */}
+            <img src="https://images.pexels.com/photos/3828097/pexels-photo-3828097.jpeg?auto=compress&cs=tinysrgb&w=200" />
           </div>
         </div>
         <div ref={parallax.ref} className="image"></div>
